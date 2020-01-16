@@ -163,16 +163,8 @@ var UIController = (function(){
 		if (intPart.length > 3) {
 			
 			intPart = `${intPart.substring(0, intPart.length-3)},${intPart.substring(intPart.length-3)}`;
-			// track = 0;
-			// for (let i = Math.ceil(intPart.length/3)-1; i>=0; i--){
-			// 	intPartFinal += `${intPart.substring(track, intPart.length-(3*i))},`;
-			// 	track = intPart.length-(3*i);
-			// }
-			// intPartFinal += intPart.substring(intPart.length-3);
 		}
-		// console.log(intPartFinal);
 		return type === 'exp' ? `- ${intPart}.${fractionPart}` : `+ ${intPart}.${fractionPart}`;
-		// return type === 'exp' ? `- ${intPartFinal}.${fractionPart}` : `+ ${intPartFinal}.${fractionPart}`;
 	};
 
 	return {
